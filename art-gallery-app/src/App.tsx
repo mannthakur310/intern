@@ -151,7 +151,7 @@ function App() {
         </div>
 
         {titleFilterVisible && (
-          <div className="title-dropdown">
+          <Panel className="title-panel">
             <div className="filter-controls flex flex-col sm:flex-row items-start sm:items-center gap-2">
               <InputText
                 keyfilter="int"
@@ -162,7 +162,7 @@ function App() {
               />
               <Button label="Submit" size="small" onClick={handleSubmitSelection} />
             </div>
-          </div>
+          </Panel>
         )}
       </div>
       <span className="sr-only">Title</span>
